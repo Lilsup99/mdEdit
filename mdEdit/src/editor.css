@@ -1,0 +1,41 @@
+
+
+
+  
+  /* Contenedor principal que organiza el editor y el resultado en dos columnas */
+  .editor-container {
+    display: flex;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    margin: 0;
+    padding: 0;
+    width: 190vh;
+  }
+  
+  /* Estilo para el área de texto */
+  .textarea-container {
+    width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100%;
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el área de resultado Markdown */
+  .result-container {
+    width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Permite desplazarse si el contenido es largo */
+    border-left: 1px solid #ccc;
+    background-color: #f8f8f8; /* Fondo para diferenciar del editor */
+    color:black
+  }
+  
