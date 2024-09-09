@@ -28,14 +28,43 @@
     box-sizing: border-box;
   }
   
-  /* Estilo para el área de resultado Markdown */
-  .result-container {
-    width: 50%; /* Ocupa el 50% del ancho de la pantalla */
-    padding: 10px;
+/* Contenedor del resultado Markdown */
+.result-container {
+    width: 60%; /* Ancho similar al tamaño oficio */
+    max-width: 816px; /* Ancho máximo */
+    height: 100%; /* Ajusta el largo al 100% del contenedor */
+    padding: 20px; /* Espacio interno alrededor del contenido */
     box-sizing: border-box;
     overflow-y: auto; /* Permite desplazarse si el contenido es largo */
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #ccc; /* Borde para separar del textarea */
     background-color: #f8f8f8; /* Fondo para diferenciar del editor */
-    color:black
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de hoja */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  /* Asegura que el contenido ocupe todo el espacio disponible */
+  .result-container * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Alinea el contenido del Markdown y añade margen interno */
+  .result-container p,
+  .result-container h1,
+  .result-container h2,
+  .result-container h3,
+  .result-container ul,
+  .result-container ol,
+  .result-container blockquote,
+  .result-container pre {
+    margin: 0 0 10px 0; /* Ajusta los márgenes según sea necesario */
+    padding: 0; /* Elimina relleno extra */
+  }
+  
+  /* Agrega algo de padding al contenido para que no esté pegado a los bordes */
+  .result-container > * {
+    margin: 0; /* Elimina márgenes extra */
+    padding: 10px 0; /* Añade relleno superior e inferior */
   }
   
